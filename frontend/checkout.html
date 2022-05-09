@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Thư viện Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Liên Hệ</title>
+    <style>
+        .text-contact,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=button] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: #45a049;
+        }
+
+        .form-contact-child {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .left {
+            width: 100%;
+        }
+
+        th {
+            background: #f2f2f2;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        table {
+            border-collapse: unset;
+        }
+
+        .left table tr th {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div class="nav-header">
+        <div class="in4">
+            <i class="fas fa-phone"></i><span class="phone-inf"> 0931.391.358</span>
+        </div>
+        <div class="form-look">
+            <form action="">
+                <input type="text" value="" placeholder="Tìm Kiếm...">
+                <button type="button" class="btn-se"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="wrapper container">
+
+            <div class="logo"><a href="index.html">
+                    <img src="./images/logotony.png" alt="" width="100px">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a> </li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+                <li><a href="./../backend/index.html">Trang Quản Trị</a></li>
+
+                <!-- icons -->
+                <li class="icons">
+                    <a href="cart.html">
+                        <span>
+                            <img src="./images/shoppingBag.svg" alt="" />
+                            <small class="count d-flex">3</small>
+                        </span>
+                    </a>
+                    <span style="font-size: 25px;"><i class='bx bxs-user'></i></span>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Check Out -->
+    <div class="container cart">
+        <div class="title" style="text-align: center; font-weight: bold; margin: 20px 0;">
+            Trang Chủ / Giỏ Hàng / Tiến Hành Đặt Hàng
+        </div>
+        <h3 style="padding: 0 0 20px 0; text-align: center;">Tiến Hành Đặt Hàng</h3>
+        <div class="form-contact">
+
+            <div class="left">
+                <h3>Đơn Hàng Của Bạn</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th>Đơn Giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Áo khóa dạ 6107 <strong> × 2</strong></td>
+                            <td> 550.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td> Áo khóa dạ 6108 <strong> × 2</strong></td>
+                            <td> 600.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td> Áo thun trắng <strong> × 2</strong></td>
+                            <td> 300.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td> Quần Kaki <strong> × 1</strong></td>
+                            <td> 300.000 VNĐ</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Tổng Tiền Giỏ Hàng</th>
+                            <td>1.750.000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <th>Phí Vận Chuyển</th>
+                            <td><strong>30.000 VNĐ</strong></td>
+                        </tr>
+                        <tr class="order_total">
+                            <th>Tổng Số Tiền Cần Thanh Toán</th>
+                            <td><strong>1.780.000 VNĐ</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="right-contact">
+
+                <div class="form-contact-child">
+                    <form action="#">
+                        <label for="fname">Họ và tên của bạn</label>
+                        <input type="text" id="fname" name="firstname" class="text-contact" placeholder="Họ tên đầy đủ">
+
+                        <label for="lname">Địa chỉ của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact" placeholder="Địa chỉ">
+
+                        <label for="lname">Email của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact" placeholder="Email">
+
+                        <label for="lname">Số điện thoại của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact" placeholder="SDT">
+
+                        <label for="country">Phương Thức Thanh Toán</label>
+                        <select id="country" name="country">
+                            <option value="0">Thanh Toán Khi Nhận Hàng</option>
+                            <option value="1">Ví điện tử (Đang Cập Nhật...)</option>
+                            <option value="2">PayPal (Đang Cập Nhật...)</option>
+                        </select>
+
+                        <label for="subject">Ghi chú</label>
+                        <textarea id="subject" name="subject" placeholder="Hãy nhập nội dung gì đó..."
+                            style="height:200px"></textarea>
+
+                        <input type="button" value="Đặt Hàng">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>Sơ Bộ Website</h3>
+                    <a href="#">Nhãn Hiệu</a>
+                    <a href="#">Phiếu Quà Tặng</a>
+                    <a href="#">Chi Nhánh</a>
+                    <a href="#">Đặc Biệt</a>
+                    <a href="#">Sơ Đồ Trang Web</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Thông Tin Website</h3>
+                    <a href="#">Về Chúng Tôi</a>
+                    <a href="#">Chính Sách Bảo Mật</a>
+                    <a href="#">Điều Khoản & Điều Kiện</a>
+                    <a href="#">Liên Hệ</a>
+                    <a href="#">Sơ Đồ Trang Web</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Tài Khoản Của Tôi</h3>
+                    <a href="#">Tài Khoản Của Tôi</a>
+                    <a href="#">Lịch Sự Đặt Hàng</a>
+                    <a href="#">Danh Sách Yêu Thích</a>
+                    <a href="#">Tin Tức</a>
+                    <a href="#">Khác</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Liên Hệ Chúng Tôi</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        huylvph14795@fpt.edu,vn
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        0931391358
+                    </div>
+                    <div class="payment-methods">
+                        <img src="./images/payment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Custom Scripts -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

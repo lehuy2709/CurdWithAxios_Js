@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Thư viện Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Tất Cả Sản Phẩm</title>
+</head>
+
+<body>
+
+  <!-- Menu -->
+
+  <div class="nav-header">
+    <div class="in4">
+      <i class="fas fa-phone"></i><span class="phone-inf"> 0931.391.358</span>
+    </div>
+    <div class="form-look">
+      <form action="">
+        <input type="text" value="" placeholder="Tìm Kiếm...">
+        <button type="button" class="btn-se"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="wrapper container">
+
+      <div class="logo"><a href="index.html">
+          <img src="./images/logotony.png" alt="" width="100px">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+        </div>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="products.html">Sản Phẩm</a> </li>
+        <li><a href="">Tin Tức</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+        <li><a href="./../backend/index.html">Trang Quản Trị</a></li>
+
+        <!-- icons -->
+        <li class="icons">
+          <a href="cart.html">
+            <span>
+              <img src="./images/shoppingBag.svg" alt="" />
+              <small class="count d-flex">3</small>
+            </span>
+          </a>
+          <span style="font-size: 25px;"><i class='bx bxs-user'></i></span>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Sản Phẩm -->
+
+  <section class="section products">
+    <div class="products-layout container">
+      <div class="col-1-of-4">
+        <div>
+          <div class="block-title">
+            <h3>Danh Mục Sản Phẩm</h3>
+          </div>
+
+          <ul class="block-content">
+
+          </ul>
+        </div>
+
+        <!-- <div>
+          <div class="block-title">
+            <h3>Thương Hiệu</h3>
+          </div>
+
+          <ul class="block-content">
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Quần Jeans</span>
+                <small>(10)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Áo Phông</span>
+                <small>(7)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Bộ Vest</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Áo Khoác</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Đồng Hồ</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Áo Len</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Áo Polo</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Mũ Len</span>
+                <small>(3)</small>
+              </label>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="col-3-of-4">
+        <form action="">
+          <div class="item">
+            <label for="sort-by">Sắp Xếp Theo</label>
+            <select name="sort-by" id="sort-by">
+              <option value="title" selected="selected">Tên</option>
+              <option value="number">Giá</option>
+              <option value="search_api_relevance">Cũ Nhất</option>
+              <option value="created">Mới Nhất</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="order-by">Theo Ký Tự</label>
+            <select name="order-by" id="sort-by">
+              <option value="ASC" selected="selected">A-Z</option>
+              <option value="DESC">Z-A</option>
+            </select>
+          </div>
+          <a href="">Áp Dụng</a>
+        </form>
+
+        <!-- danh sách sản phẩm 
+         -->
+        <div class="product-layout">
+
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/item1.jpg" alt="" />
+              <div class="addCart">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+
+              <ul class="side-icons">
+                <div class="deletais-eye" style="margin-bottom:10px">
+                  <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+                </div>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="productDetails.html">Áo khóa dạ 6107</a>
+              <div class="price">
+                <span>599.000 VNĐ</span>
+              </div>
+            </div>
+          </div>
+
+ 
+
+
+
+        </div>
+
+        <!-- Phân Trang -->
+        <ul class="pagination">
+          <span>1</span>
+          <span>2</span>
+          <span class="icon">››</span>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Sơ Bộ Website</h3>
+          <a href="#">Nhãn Hiệu</a>
+          <a href="#">Phiếu Quà Tặng</a>
+          <a href="#">Chi Nhánh</a>
+          <a href="#">Đặc Biệt</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Thông Tin Website</h3>
+          <a href="#">Về Chúng Tôi</a>
+          <a href="#">Chính Sách Bảo Mật</a>
+          <a href="#">Điều Khoản & Điều Kiện</a>
+          <a href="#">Liên Hệ</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Tài Khoản Của Tôi</h3>
+          <a href="#">Tài Khoản Của Tôi</a>
+          <a href="#">Lịch Sự Đặt Hàng</a>
+          <a href="#">Danh Sách Yêu Thích</a>
+          <a href="#">Tin Tức</a>
+          <a href="#">Khác</a>
+        </div>
+        <div class="footer-center">
+          <h3>Liên Hệ Chúng Tôi</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            huylvph14795@fpt.edu,vn
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            0931391358
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Custom Scripts -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/product.js"></script>
+</body>
+
+</html>

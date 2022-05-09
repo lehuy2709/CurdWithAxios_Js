@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Thư viện Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Liên Hệ</title>
+    <style>
+        .text-contact,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .form-contact-child {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div class="nav-header">
+        <div class="in4">
+            <i class="fas fa-phone"></i><span class="phone-inf"> 0931.391.358</span>
+        </div>
+        <div class="form-look">
+            <form action="">
+                <input type="text" value="" placeholder="Tìm Kiếm...">
+                <button type="button" class="btn-se"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="wrapper container">
+
+            <div class="logo"><a href="index.html">
+                    <img src="./images/logotony.png" alt="" width="100px">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <div class="top">
+                    <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+                </div>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a> </li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="./../backend/index.html">Trang Quản Trị</a></li>
+
+                <!-- icons -->
+                <li class="icons">
+                    <a href="cart.html">
+                        <span>
+                            <img src="./images/shoppingBag.svg" alt="" />
+                            <small class="count d-flex">3</small>
+                        </span>
+                    </a>
+                    <span style="font-size: 25px;"><i class='bx bxs-user'></i></span>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Liên Hệ -->
+    <div class="container cart">
+        <div class="title" style="text-align: center; font-weight: bold; margin: 20px 0;">
+            Trang Chủ / Liên Hệ
+        </div>
+        <div class="map" style="width: 100%">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9226114400108!2d105.7900403139146!3d21.03578229291674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba0bf9c8d67%3A0xc20cb395cd78779a!2zVG9ueTRtZW4gU2hvcCBD4bqndSBHaeG6pXk!5e0!3m2!1svi!2s!4v1642259715641!5m2!1svi!2s"
+                width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form-contact">
+            <div class="left-contact">
+                <div class="phone">
+                    <i class="fas fa-phone"></i> <span>0931.391.358</span>
+                </div>
+                <div class="website">
+                    <i class="fas fa-globe-asia"></i> <span>huylvph14795.com</span>
+                </div>
+                <div class="location">
+                    <i class="fas fa-location-arrow"></i> <span>364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội</span>
+                </div>
+            </div>
+            <div class="right-contact">
+                <h3>Gửi Phản Hồi</h3>
+
+                <div class="form-contact-child">
+                    <form action="#">
+                        <label for="fname">Họ và tên của bạn</label>
+                        <input type="text" id="fname" name="firstname" class="text-contact" placeholder="Họ tên đầy đủ">
+
+                        <label for="lname">Địa chỉ của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact"  placeholder="Địa chỉ">
+
+                        <label for="lname">Email của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact"  placeholder="Email">
+
+                        <label for="lname">Số điện thoại của bạn</label>
+                        <input type="text" id="lname" name="lastname" class="text-contact"  placeholder="SDT">
+
+                        <label for="subject">Nội dung phản hồi</label>
+                        <textarea id="subject" name="subject" placeholder="Hãy nhập nội dung gì đó..."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Gửi Phản Hồi">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>Sơ Bộ Website</h3>
+                    <a href="#">Nhãn Hiệu</a>
+                    <a href="#">Phiếu Quà Tặng</a>
+                    <a href="#">Chi Nhánh</a>
+                    <a href="#">Đặc Biệt</a>
+                    <a href="#">Sơ Đồ Trang Web</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Thông Tin Website</h3>
+                    <a href="#">Về Chúng Tôi</a>
+                    <a href="#">Chính Sách Bảo Mật</a>
+                    <a href="#">Điều Khoản & Điều Kiện</a>
+                    <a href="#">Liên Hệ</a>
+                    <a href="#">Sơ Đồ Trang Web</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Tài Khoản Của Tôi</h3>
+                    <a href="#">Tài Khoản Của Tôi</a>
+                    <a href="#">Lịch Sự Đặt Hàng</a>
+                    <a href="#">Danh Sách Yêu Thích</a>
+                    <a href="#">Tin Tức</a>
+                    <a href="#">Khác</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Liên Hệ Chúng Tôi</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        huylvph14795@fpt.edu,vn
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        0931391358
+                    </div>
+                    <div class="payment-methods">
+                        <img src="./images/payment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Custom Scripts -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

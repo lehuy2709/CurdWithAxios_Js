@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Thư viện Swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+  <!-- Thư viện Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Thời Trang Tony4men</title>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <div class="nav-header">
+    <div class="in4">
+      <i class="fas fa-phone"></i><span class="phone-inf"> 0931.391.358</span>
+    </div>
+    <div class="form-look">
+      <form action="">
+        <input type="text" value="" placeholder="Tìm Kiếm...">
+        <button type="button" class="btn-se"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="wrapper container">
+
+      <div class="logo"><a href="index.html">
+          <img src="./images/logotony.png" alt="" width="100px">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+        </div>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="products.html">Sản Phẩm</a> </li>
+        <li><a href="">Tin Tức</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+        <!-- <li><a href="register.html">Đăng ký</a></li> -->
+        <li><a href="../backend/category/index.html">Trang Quản Trị</a></li>
+
+        <!-- icons -->
+        <li class="icons">
+          <a href="cart.html">
+            <span>
+              <img src="./images/shoppingBag.svg" alt="" />
+              <small class="count d-flex">3</small>
+            </span>
+          </a>
+          <span style="font-size: 25px;"><i class='bx bxs-user'></i></span>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- slide -->
+  <div class="hero">
+
+    <div class="row">
+
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="./images/bn1.jpg" alt="" />
+
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/bn2.png" alt="" />
+ 
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- nút bấm -->
+    <div class="arrows d-flex">
+
+      <div class="swiper-prev d-flex">
+        <i class="bx bx-chevrons-left swiper-icon"></i>
+      </div>
+      <div class="swiper-next d-flex">
+        <i class="bx bx-chevrons-right swiper-icon"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sản phẩm mới nhất -->
+
+  <section class="section promotion">
+
+    <div class="title">
+      <h2>Sản Phẩm Mới Nhất</h2>
+      <span>Chọn ngay sản phẩm đẹp và tiết kiệm tiền được nhất !</span>
+    </div>
+
+    <div class="promotion-layout container">
+
+      <!-- <div class="promotion-item">
+
+      </div> -->
+
+
+
+    </div>
+  </section>
+
+  <!-- Sản phẩm bán chạy == -->
+  <section class="section products">
+    <div class="title">
+      <h2>Sản Phẩm Bán Chạy</h2>
+      <span>Hãy lựa chọn sản phẩm mà bạn yêu thích nhất</span>
+    </div>
+
+    <div class="product-layout">
+
+      <!-- <div class="product">
+        <div class="img-container">
+          <img src="./images/item1.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="cart.html">Áo khóa dạ 6107</a>
+          <div class="price">
+            <span>599.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item2.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Khoác Măng Tô</a>
+          <div class="price">
+            <span>600.000 VNĐ</span>
+            <span class="cancel">700.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item3.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Len 7027</a>
+          <div class="price">
+            <span>599.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item4.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Len 7020</a>
+          <div class="price">
+            <span>600.000 VNĐ</span>
+            <span class="cancel">710.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item5.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Khoác Da Lộn</a>
+          <div class="price">
+            <span>599.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item6.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Quần Jeans 1077</a>
+          <div class="price">
+            <span>299.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item7.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Sơ Mi Cộc 2043 </a>
+          <div class="price">
+            <span>200.000 VNĐ</span>
+            <span class="cancel">310.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/item8.jpg" alt="" />
+          <div class="addCart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+          <ul class="side-icons">
+            <div class="deletais-eye" style="margin-bottom:10px">
+              <a href="productDetails.html"><span><i class="fas fa-eye"></i></span></a>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom">
+          <a href="">Áo Phông Đen 1102 </a>
+          <div class="price">
+            <span>199.000 VNĐ</span>
+            <span class="cancel">210.000 VNĐ</span>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Tin Tức -->
+  <section class="section advert">
+    <div class="title">
+      <h2>Tin Tức</h2>
+      <span>Cùng đọc tin tức mới nhất về cửa hàng nhé !</span>
+    </div>
+    <div class="advert-layout container">
+      <div class="item ">
+        <img src="./images/news1.jpg" alt="">
+        <div class="content left">
+          <span>Sơ mi trắng chính là “vũ khí không lời”...</span>
+          <h3>Phối sơ mi</h3>
+          <a href="">Đọc Ngay...</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/news2.jpg" alt="">
+        <div class="content  right">
+          <span>Bạn thật sự đã am hiểu về hình thức thanh toán ?</span>
+          <h3>Cách Thức thanh toán</h3>
+          <a href="">Đọc ngay...</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Sơ Bộ Website</h3>
+          <a href="#">Nhãn Hiệu</a>
+          <a href="#">Phiếu Quà Tặng</a>
+          <a href="#">Chi Nhánh</a>
+          <a href="#">Đặc Biệt</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Thông Tin Website</h3>
+          <a href="#">Về Chúng Tôi</a>
+          <a href="#">Chính Sách Bảo Mật</a>
+          <a href="#">Điều Khoản & Điều Kiện</a>
+          <a href="#">Liên Hệ</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Tài Khoản Của Tôi</h3>
+          <a href="#">Tài Khoản Của Tôi</a>
+          <a href="#">Lịch Sự Đặt Hàng</a>
+          <a href="#">Danh Sách Yêu Thích</a>
+          <a href="#">Tin Tức</a>
+          <a href="#">Khác</a>
+        </div>
+        <div class="footer-center">
+          <h3>Liên Hệ Chúng Tôi</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            huylvph14795@fpt.edu,vn
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            0931391358
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- ======== Thư Viện Swiper ======= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+  <!-- Sử dụng Scripts -->
+  <script src="./js/slider.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/main.js"></script> -->
+
+</body>
+
+</html>

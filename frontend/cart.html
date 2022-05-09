@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Thư viện Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Giỏ Hàng</title>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <div class="nav-header">
+    <div class="in4">
+      <i class="fas fa-phone"></i><span class="phone-inf"> 0931.391.358</span>
+    </div>
+    <div class="form-look">
+      <form action="">
+        <input type="text" value="" placeholder="Tìm Kiếm...">
+        <button type="button" class="btn-se"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="wrapper container">
+
+      <div class="logo"><a href="index.html">
+          <img src="./images/logotony.png" alt="" width="100px">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+        </div>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="products.html">Sản Phẩm</a> </li>
+        <li><a href="">Tin Tức</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+        <li><a href="./../backend/index.html">Trang Quản Trị</a></li>
+
+        <!-- icons -->
+        <li class="icons">
+          <a href="cart.html">
+            <span>
+            <img src="./images/shoppingBag.svg" alt="" />
+            <small class="count d-flex">3</small>
+          </span>
+          </a>
+          <span style="font-size: 25px;"><i class='bx bxs-user'></i></span>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Cart Items -->
+  <div class="container cart">
+    <table>
+      <thead>
+        <tr>
+          <th>Mã Sản Phẩm</th>
+          <th>Sản Phẩm</th>
+          <th>Số Lượng</th>
+          <th>Đơn Giá</th>
+          <th>Thành Tiền</th>
+          <th>Thao Tác</th>
+        </tr>
+      </thead>
+   
+      <tbody id="target">
+
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="4">Tổng Tiền</th>
+          <th id="show-total"></th>
+        </tr>
+      </tfoot>
+    
+
+
+    </table>
+
+    <div class="total-price">
+
+      <table>
+        <tr>
+          <td><a href="checkout.html" class="checkout btn">Tiến Hành Đặt Hàng</a></td>
+        </tr>
+      
+      </table>
+     
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Sơ Bộ Website</h3>
+          <a href="#">Nhãn Hiệu</a>
+          <a href="#">Phiếu Quà Tặng</a>
+          <a href="#">Chi Nhánh</a>
+          <a href="#">Đặc Biệt</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Thông Tin Website</h3>
+          <a href="#">Về Chúng Tôi</a>
+          <a href="#">Chính Sách Bảo Mật</a>
+          <a href="#">Điều Khoản & Điều Kiện</a>
+          <a href="#">Liên Hệ</a>
+          <a href="#">Sơ Đồ Trang Web</a>
+        </div>
+        <div class="footer-center">
+          <h3>Tài Khoản Của Tôi</h3>
+          <a href="#">Tài Khoản Của Tôi</a>
+          <a href="#">Lịch Sự Đặt Hàng</a>
+          <a href="#">Danh Sách Yêu Thích</a>
+          <a href="#">Tin Tức</a>
+          <a href="#">Khác</a>
+        </div>
+        <div class="footer-center">
+          <h3>Liên Hệ Chúng Tôi</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            364 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            huylvph14795@fpt.edu,vn
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            0931391358
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Custom Scripts -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+
+</html>
